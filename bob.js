@@ -20,6 +20,7 @@ class Bob
         var pos =this.body.position
         push();
         fill("white")
+        ellipseMode(RADIUS)
         ellipse(pos.x , pos.y , this.radius)
         pop();
     }

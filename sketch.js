@@ -21,8 +21,8 @@ function setup() {
 
   bobDiameter = 30;
 
-  bobPositionX = width/50;
-  bobPositionY = height/5+100;
+  bobPositionX = width/2;
+  bobPositionY = height/4+400;
   
   bob1= new Bob(bobPositionX - bobDiameter*2 , bobPositionY , bobDiameter );
   bob2= new Bob(bobPositionX - bobDiameter , bobPositionY , bobDiameter );
@@ -56,7 +56,6 @@ Engine.update(engine);
   rope3.display();
   rope4.display();
   rope5.display();
-
 bob1.display();
   bob2.display();
   bob3.display();
@@ -74,7 +73,7 @@ function keyPressed()
   if(keyCode == UP_ARROW)
   {
 
-    Matter.Body.applyForce(bob4.body,bob4.body.position,{x:-60 , y:-45});
+    Matter.Body.applyForce(bob4.body,bob4.body.position,{x:-150 , y:-105});
 
   }
   
